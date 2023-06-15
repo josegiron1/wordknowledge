@@ -96,10 +96,10 @@ function Flashcard({
         onClick={() => setIsFlipped(!isFlipped)}
       >
         <div className="card-side front flex items-center justify-center rounded-md bg-white p-2 text-black">
-          <p className="text-2xl sm:text-4xl">{word}</p>
+          <p className="text-2xl sm:text-4xl leading-normal sm:leading-normal">{word}</p>
         </div>
         <div className="card-side back flex items-center justify-center rounded-md bg-white p-2 text-black">
-          <p className="text-2xl sm:text-4xl leading-normal">
+          <p className="text-2xl sm:text-4xl leading-normal sm:leading-normal">
             <mark className="bg-[#d4ff32]">{meaning}</mark>
           </p>
         </div>
