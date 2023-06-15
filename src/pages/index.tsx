@@ -64,7 +64,7 @@ function Flashcard({
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
-    <div className="flex min-h-96 min-w-1/2 flex-col items-center justify-center">
+    <div className="flex h-96 w-1/2 flex-col items-center justify-center">
       <div
         className={`card h-full w-full ${isFlipped ? "is-flipped" : ""}`}
         onClick={() => setIsFlipped(!isFlipped)}
