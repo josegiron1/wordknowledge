@@ -57,6 +57,7 @@ const Home: NextPage = () => {
           getRandomCardWithTime={() => getCardWithTime()}
         />
         <footer className="flex gap-3 p-2 text-white">
+          <p>Created by:</p>
           <SocialMediaItem
             href="https://www.linkedin.com/in/gironjose5/"
             src="/linkedin_logo_icon.svg"
