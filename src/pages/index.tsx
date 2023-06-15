@@ -2,6 +2,7 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import data from "../data.json";
+import Image from "next/image";
 
 function getRandomCard() {
   const randomIndex = Math.floor(Math.random() * data.cards.length);
@@ -10,20 +11,14 @@ function getRandomCard() {
 
 const Home: NextPage = () => {
   const [randomCard, setRandomCard] = useState({ word: "", meaning: "" });
-  const [isFlipping, setIsFlipping] = useState(false);
 
   useEffect(() => {
     setRandomCard(getRandomCard() || { word: "", meaning: "" });
   }, []);
 
-  function flip() {
-    setIsFlipping(true);
-    setTimeout(() => {
-      setIsFlipping(false);
-    }
-    , 500);
+  function getCard() {
+    setRandomCard(getRandomCard() || { word: "", meaning: "" });
   }
-
 
   return (
     <>
@@ -36,17 +31,22 @@ const Home: NextPage = () => {
         <Flashcard
           word={randomCard?.word || ""}
           meaning={randomCard?.meaning || ""}
-          flip={isFlipping}
+          getRandomCard={() => getCard()}
         />
-        <button
-          className="mt-4 rounded-md bg-white p-2 text-black"
-          onClick={() => {
-            flip();
-            setRandomCard(getRandomCard() || { word: "", meaning: "" });
-          }}
-        >
-          Next
-        </button>
+        <footer className="absolute bottom-0 p-2 text-white flex gap-3">
+          <SocialMediaItem
+            href="https://www.linkedin.com/in/gironjose5/"
+            src="/linkedin_logo_icon.svg"
+            alt="LinkedIn"
+            text="gironjose5"
+          />
+          <SocialMediaItem
+            href="https://github.com/josegiron1"
+            src="/social_github_icon.svg"
+            alt="GitHub"
+            text="josegiron1"
+          />
+        </footer>
       </main>
     </>
   );
@@ -55,23 +55,16 @@ const Home: NextPage = () => {
 function Flashcard({
   word,
   meaning,
-  flip
+  getRandomCard,
 }: {
   word: string;
   meaning: string;
-  flip?: boolean;
+  getRandomCard: () => void;
 }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
-  useEffect(() => {
-    if (isFlipped === true && flip === true) {
-      setIsFlipped(false);
-    }
-  }, [flip]);
-
-
   return (
-    <div className="flex h-96 w-1/2 items-center justify-center">
+    <div className="flex h-96 w-1/2 flex-col items-center justify-center">
       <div
         className={`card h-full w-full ${isFlipped ? "is-flipped" : ""}`}
         onClick={() => setIsFlipped(!isFlipped)}
@@ -85,7 +78,43 @@ function Flashcard({
           </p>
         </div>
       </div>
+      <button
+        className="mt-4 rounded-md bg-white p-2 text-black"
+        onClick={() => {
+          if (!isFlipped) {
+            getRandomCard();
+          } else {
+            setIsFlipped(false);
+            getRandomCard();
+          }
+        }}
+      >
+        Next
+      </button>
     </div>
+  );
+}
+
+function SocialMediaItem({
+  href,
+  src,
+  alt,
+  text,
+}: {
+  href: string;
+  src: string;
+  alt: string;
+  text: string;
+}) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className="flex flex-col items-center gap-2 hover:underline sm:flex-row"
+    >
+      <Image src={src} width={24} height={24} alt={alt} /> <span>{text}</span>
+    </a>
   );
 }
 
