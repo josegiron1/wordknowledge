@@ -48,14 +48,15 @@ const Home: NextPage = () => {
         <meta name="description" content="Army ASVAB Word Knowledge" />
         <link rel="icon" href="/wk.png" />
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#0f0f0f] to-[#15162c]">
+      <main className="flex min-h-screen flex-col items-center justify-between bg-gradient-to-b from-[#0f0f0f] to-[#15162c]">
+        <div></div>
         <Flashcard
           word={randomCard?.word || ""}
           meaning={randomCard?.meaning || ""}
           getRandomCard={() => getCard()}
           getRandomCardWithTime={() => getCardWithTime()}
         />
-        <footer className="absolute bottom-0 flex gap-3 p-2 text-white">
+        <footer className="flex gap-3 p-2 text-white">
           <SocialMediaItem
             href="https://www.linkedin.com/in/gironjose5/"
             src="/linkedin_logo_icon.svg"
