@@ -88,16 +88,16 @@ function Flashcard({
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
-    <div className="flex h-[32rem] w-10/12 flex-col items-center  justify-center lg:h-96 lg:w-1/2">
+    <div className="flex h-96 w-10/12 flex-col items-center  justify-center lg:w-1/2">
       <div
         className={`card h-full w-full ${isFlipped ? "is-flipped" : ""}`}
         onClick={() => setIsFlipped(!isFlipped)}
       >
         <div className="card-side front flex items-center justify-center rounded-md bg-white p-2 text-black">
-          <p className="text-4xl">{word}</p>
+          <p className="text-2xl sm:text-4xl">{word}</p>
         </div>
         <div className="card-side back flex items-center justify-center rounded-md bg-white p-2 text-black">
-          <p className="text-4xl leading-normal">
+          <p className="text-2xl sm:text-4xl leading-normal">
             <mark className="bg-[#d4ff32]">{meaning}</mark>
           </p>
         </div>
