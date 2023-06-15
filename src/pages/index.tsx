@@ -4,17 +4,38 @@ import { useEffect, useState } from "react";
 import data from "../data.json";
 import Image from "next/image";
 
+function getRandomCardWithTime(): Promise<{ word: string; meaning: string }> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(getRandomCard() || { word: "", meaning: "" });
+    }, 500);
+  });
+}
+
 function getRandomCard() {
   const randomIndex = Math.floor(Math.random() * data.cards.length);
   return data.cards[randomIndex];
 }
 
 const Home: NextPage = () => {
-  const [randomCard, setRandomCard] = useState({ word: "", meaning: "" });
+  const [randomCard, setRandomCard] = useState<{
+    word: string;
+    meaning: string;
+  }>({ word: "", meaning: "" });
 
   useEffect(() => {
     setRandomCard(getRandomCard() || { word: "", meaning: "" });
   }, []);
+
+  function getCardWithTime() {
+    getRandomCardWithTime()
+      .then((newCard) => {
+        setRandomCard(newCard || { word: "", meaning: "" });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
 
   function getCard() {
     setRandomCard(getRandomCard() || { word: "", meaning: "" });
@@ -32,8 +53,9 @@ const Home: NextPage = () => {
           word={randomCard?.word || ""}
           meaning={randomCard?.meaning || ""}
           getRandomCard={() => getCard()}
+          getRandomCardWithTime={() => getCardWithTime()}
         />
-        <footer className="absolute bottom-0 p-2 text-white flex gap-3">
+        <footer className="absolute bottom-0 flex gap-3 p-2 text-white">
           <SocialMediaItem
             href="https://www.linkedin.com/in/gironjose5/"
             src="/linkedin_logo_icon.svg"
@@ -56,15 +78,17 @@ function Flashcard({
   word,
   meaning,
   getRandomCard,
+  getRandomCardWithTime,
 }: {
   word: string;
   meaning: string;
   getRandomCard: () => void;
+  getRandomCardWithTime: () => void;
 }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
-    <div className="flex h-[32rem] lg:h-96 w-10/12 lg:w-1/2  flex-col items-center justify-center">
+    <div className="flex h-[32rem] w-10/12 flex-col items-center  justify-center lg:h-96 lg:w-1/2">
       <div
         className={`card h-full w-full ${isFlipped ? "is-flipped" : ""}`}
         onClick={() => setIsFlipped(!isFlipped)}
@@ -85,7 +109,7 @@ function Flashcard({
             getRandomCard();
           } else {
             setIsFlipped(false);
-            getRandomCard();
+            getRandomCardWithTime();
           }
         }}
       >
