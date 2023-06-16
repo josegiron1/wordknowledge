@@ -1,4 +1,17 @@
-# Create T3 App
+# ASVAB Word Knowledge Flashcard App
+
+The ASVAB Word Knowledge Flashcard App offers a simple yet effective way to prepare for the test. It presents the user with a word on the front of the flashcard. The user's goal is to recall the meaning of the word. Upon clicking the card, the app flips the card to reveal the definition on the back.
+
+The app is designed to assist in the retention and recall of vocabulary, crucial for success in the Word Knowledge part of the ASVAB test. The project utilizes a set of words commonly found in the exam, providing targeted preparation.
+
+Features
+Randomized Flashcards: The app chooses a random word from the set each time you flip the card, keeping your study session varied and unpredictable, just like the actual exam.
+
+Interactive UI: The flashcard flip is interactive, and users can manually flip the card to see the word's meaning. The app uses a smooth transition effect for a pleasing user experience.
+
+Easy Navigation: After revealing the word's meaning, the user can easily move to the next word by clicking the "Next" button. This triggers the card to flip back, and a new random word appears.
+
+## How do I use this?
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
