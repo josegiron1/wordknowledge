@@ -371,6 +371,286 @@
     {
       "word": "Gloomy",
       "meaning": "sad or depressing"
+    },
+    {
+      "word": "Extraneous",
+      "meaning": "Irrelevant; coming from something external"
+    },
+    {
+      "word": "Fortuitous",
+      "meaning": "Lucky; fortunate; chance; unexpected; unpredictable"
+    },
+    {
+      "word": "Lethargic",
+      "meaning": "Sluggish; little emotion; listless; lackadaisical"
+    },
+    {
+      "word": "Plethora",
+      "meaning": "An excess; a large amount of something"
+    },
+    {
+      "word": "Squander",
+      "meaning": "To spend wastefully; extravagantly;"
+    },
+    {
+      "word": "Proviso",
+      "meaning": "A condition attached to an agreement; contract; stipulation"
+    },
+    {
+      "word": "Pitfalls",
+      "meaning": "Traps; a hidden or unsuspected danger or difficulty"
+    },
+    {
+      "word": "Onerous",
+      "meaning": "Troublesome; causing hardships; involving an amount of effort and difficulty"
+    },
+    {
+      "word": "Solace",
+      "meaning": "Comfort or consolation in a time of distress or sadness"
+    },
+    {
+      "word": "Amenable",
+      "meaning": "Willing to act, answer or yield; submissive"
+    },
+    {
+      "word": "Inexorable",
+      "meaning": "Unyielding; not to be persuaded or moved; impossible to stop"
+    },
+    {
+      "word": "Paragon",
+      "meaning": "Someone who is excellent or exceptional"
+    },
+    {
+      "word": "Quandary",
+      "meaning": "A dilemma or state of uncertainty about what to do in a difficult situation"
+    },
+    {
+      "word": "Insubordinate",
+      "meaning": "Not consenting to authority; disobedient"
+    },
+    {
+      "word": "Chagrin",
+      "meaning": "A feeling of disappointment or humiliation at having failed"
+    },
+    {
+      "word": "Digress",
+      "meaning": "To deviate or depart from the main topic or argument in speech or writing"
+    },
+    {
+      "word": "Disparate",
+      "meaning": "Distinct or dissimilar; not allowing comparison"
+    },
+    {
+      "word": "Slipshod",
+      "meaning": "Careless, untidy, or slovenly"
+    },
+    {
+      "word": "Eschew",
+      "meaning": "Deliberately avoid using; keep away from"
+    },
+    {
+      "word": "Truncate",
+      "meaning": "To cut short; to cut off a part; curtail"
+    },
+    {
+      "word": "Germinate",
+      "meaning": "To sprout or bud; mature or develop, as a plant"
+    },
+    {
+      "word": "Filament",
+      "meaning": "A thread or string that is very thin"
+    },
+    {
+      "word": "Congeal",
+      "meaning": "Solidify, coagulate, or harden"
+    },
+    {
+      "word": "Reconnoiter",
+      "meaning": "To scout; to see before others for planning purposes"
+    },
+    {
+      "word": "Accrue",
+      "meaning": "Accumulate over time as a result of growth; increase"
+    },
+    {
+      "word": "Victor",
+      "meaning": "Winner"
+    },
+    {
+      "word": "Contention",
+      "meaning": "Position"
+    },
+    {
+      "word": "Newsworthy",
+      "meaning": "Notable"
+    },
+    {
+      "word": "Sporadic",
+      "meaning": "Irregular"
+    },
+    {
+      "word": "Presumptuous",
+      "meaning": "Overconfident"
+    },
+    {
+      "word": "Blacklisted",
+      "meaning": "Barren"
+    },
+    {
+      "word": "Memento",
+      "meaning": "Souvenir"
+    },
+    {
+      "word": "Legacy",
+      "meaning": "Memory"
+    },
+    {
+      "word": "Infraction",
+      "meaning": "Violation"
+    },
+    {
+      "word": "Hoax",
+      "meaning": "Trick"
+    },
+    {
+      "word": "Genesis",
+      "meaning": "Origin"
+    },
+    {
+      "word": "Adept",
+      "meaning": "Skilled"
+    },
+    {
+      "word": "Rampant",
+      "meaning": "Widespread"
+    },
+    {
+      "word": "Puny",
+      "meaning": "Weak"
+    },
+    {
+      "word": "Witty",
+      "meaning": "Clever"
+    },
+    {
+      "word": "Sinister",
+      "meaning": "Wicked"
+    },
+    {
+      "word": "Admonish",
+      "meaning": "Reprimand"
+    },
+    {
+      "word": "Calamity",
+      "meaning": "Misfortune"
+    },
+    {
+      "word": "Rogue",
+      "meaning": "Dishonest"
+    },
+    {
+      "word": "Exempt",
+      "meaning": "Excuse"
+    },
+    {
+      "word": "Herd",
+      "meaning": "Pack"
+    },
+    {
+      "word": "Hesitating",
+      "meaning": "Pausing"
+    },
+    {
+      "word": "Coax",
+      "meaning": "Plead"
+    },
+    {
+      "word": "Consternation",
+      "meaning": "Frustration"
+    },
+    {
+      "word": "Savory",
+      "meaning": "Tasty"
+    },
+    {
+      "word": "Conscientious",
+      "meaning": "Painstaking"
+    },
+    {
+      "word": "Diversion",
+      "meaning": "Distraction"
+    },
+    {
+      "word": "Profess",
+      "meaning": "Claim"
+    },
+    {
+      "word": "Variable",
+      "meaning": "Changeable"
+    },
+    {
+      "word": "Contingent",
+      "meaning": "Dependent"
+    },
+    {
+      "word": "Immaculate",
+      "meaning": "Spotless"
+    },
+    {
+      "word": "Capsized",
+      "meaning": "Overturned"
+    },
+    {
+      "word": "Abdicated",
+      "meaning": "Abandoned"
+    },
+    {
+      "word": "Buoyant",
+      "meaning": "Floating"
+    },
+    {
+      "word": "Teeming",
+      "meaning": "Crowded"
+    },
+    {
+      "word": "Bestow",
+      "meaning": "Give"
+    },
+    {
+      "word": "Plummeted",
+      "meaning": "Plunged"
+    },
+    {
+      "word": "Defiled",
+      "meaning": "Desecrated"
+    },
+    {
+      "word": "Calamitous",
+      "meaning": "Disastrous"
+    },
+    {
+      "word": "Lure",
+      "meaning": "Attract"
+    },
+    {
+      "word": "Judicious",
+      "meaning": "Sensible"
+    },
+    {
+      "word": "Forlorn",
+      "meaning": "Hopeless"
+    },
+    {
+      "word": "Haughty",
+      "meaning": "Proud"
+    },
+    {
+      "word": "Irascible",
+      "meaning": "Testy"
+    },
+    {
+      "word": "Obliterated",
+      "meaning": "Destroyed"
     }
   ]
 }
